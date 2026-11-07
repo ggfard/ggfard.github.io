@@ -1,0 +1,29 @@
+# One-time helper: copies images/PDFs from the old WordPress site into this repo.
+# Run it from the repo's "Actions" tab -> "Copy media from old site" -> "Run workflow".
+name: Copy media from old site
+on: workflow_dispatch
+
+permissions:
+  contents: write
+
+jobs:
+  copy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Download every file listed in old-site-media.txt
+        run: |
+          grep -v '^#' old-site-media.txt | while read url dest; do
+            [ -z "$url" ] && continue
+            mkdir -p "$(dirname "$dest")"
+            curl -fsSL "$url" -o "$dest" && echo "ok: $dest" || echo "FAILED: $url"
+          done
+
+      - name: Commit the downloaded files
+        run: |
+          git config user.name "github-actions"
+          git config user.email "github-actions@users.noreply.github.com"
+          git add assets
+          git commit -m "Copy media from old WordPress site" || echo "Nothing new to commit"
+          git push

@@ -1,0 +1,16 @@
+---
+layout: default
+title: Publications
+permalink: /publications/
+---
+<h1>Publications</h1>
+<p class="muted">See also <a href="https://scholar.google.com/citations?user=TMMCdbEAAAAJ&hl=en">Google Scholar</a>.</p>
+
+<h2>Papers</h2>
+{% for p in site.data.publications.papers %}{% include pub.html p=p %}{% endfor %}
+
+<h2>Book Chapters</h2>
+{% for p in site.data.publications.chapters %}{% include pub.html p=p %}{% endfor %}
+
+<h2>Posters &amp; Presentations</h2>
+{% for p in site.data.publications.posters %}{% include pub.html p=p %}{% endfor %}

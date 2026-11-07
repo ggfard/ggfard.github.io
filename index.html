@@ -1,0 +1,33 @@
+---
+layout: default
+---
+<section class="intro">
+  <img src="{{ '/assets/img/profile.jpg' | relative_url }}" alt="Golnar Gharooni-Fard">
+  <div>
+    <h1>Golnar Gharooni-Fard</h1>
+    <!-- DRAFT bio: edit freely -->
+    <p>
+      I am a postdoctoral fellow in the <a href="https://softmath.seas.harvard.edu/">Soft Math Lab</a>
+      at Harvard University and an AAUW Postdoctoral Fellow (2026–2027).
+      I study how collective behavior emerges in animal groups and how animals and people coordinate. My work includes
+      how honeybees build and adapt their comb, how they share food, and how humans and honeyguides communicate
+      while searching for bee nests. I combine experiments and field data with mathematical, physical,
+      and data-driven models.
+    </p>
+    <p>
+      I received my PhD in Computer Science from the University of Colorado Boulder in 2024.
+    </p>
+    <p class="links">
+      {% if site.email != "" %}<a href="mailto:{{ site.email }}">Email</a>{% endif %}
+      {% if site.cv != "" %}<a href="{{ site.cv | relative_url }}">CV</a>{% endif %}
+      {% for s in site.social %}<a href="{{ s.url }}">{{ s.name }}</a>{% endfor %}
+    </p>
+  </div>
+</section>
+
+<h2>News</h2>
+<ul class="news">
+  {% for n in site.data.news %}
+  <li><span class="date">{{ n.date }}</span>{{ n.text | markdownify }}</li>
+  {% endfor %}
+</ul>

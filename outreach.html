@@ -1,0 +1,23 @@
+---
+layout: default
+title: Media & Outreach
+permalink: /outreach/
+---
+<h1>Media Coverage &amp; Outreach</h1>
+
+{% for m in site.data.media.coverage %}
+<div class="media">
+  <a href="{{ m.url }}"><img src="{{ '/assets/img/media/' | append: m.image | relative_url }}" alt="{{ m.outlet }}"></a>
+  <div>
+    <div class="item"><a class="title" href="{{ m.url }}">{{ m.outlet }}</a>
+      {% if m.date %}<div class="meta">{{ m.date }}</div>{% endif %}
+      {% if m.note %}<div>{{ m.note }}</div>{% endif %}
+    </div>
+  </div>
+</div>
+{% endfor %}
+
+<h2>Public &amp; Community Talks</h2>
+<ul>
+  {% for t in site.data.media.talks %}<li><a href="{{ t.url }}">{{ t.name }}</a></li>{% endfor %}
+</ul>

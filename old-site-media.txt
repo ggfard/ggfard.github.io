@@ -1,0 +1,22 @@
+# Images & PDFs from the old WordPress site and where they go in this repo.
+# Used by .github/workflows/copy-old-media.yml (run it once from the Actions tab).
+# Format: <old URL> <new path>
+https://ggfard.com/wp-content/uploads/2026/05/golnar-photo1.jpg assets/img/profile.jpg
+https://ggfard.com/wp-content/uploads/2025/08/img_2599-1-edited.jpeg assets/img/profile-alt.jpeg
+https://ggfard.com/wp-content/uploads/2025/02/dsc_2207.jpeg assets/img/research/dsc_2207.jpeg
+https://ggfard.com/wp-content/uploads/2019/11/20191129_200323.jpg assets/img/research/20191129_200323.jpg
+https://ggfard.com/wp-content/uploads/2022/12/dsc_2222-1-1.jpeg assets/img/research/dsc_2222-1-1.jpeg
+https://ggfard.com/wp-content/uploads/2025/02/apiary_flowers-copy.jpg assets/img/research/apiary_flowers-copy.jpg
+https://ggfard.com/wp-content/uploads/2025/08/trophallaxis.jpeg assets/img/research/trophallaxis.jpeg
+https://ggfard.com/wp-content/uploads/2025/08/trophallaxis_setup_camera_view.jpg assets/img/research/trophallaxis_setup_camera_view.jpg
+https://ggfard.com/wp-content/uploads/2026/11/screenshot-2026-11-03-at-10.48.26-am-1.png assets/img/media/nyt.png
+https://ggfard.com/wp-content/uploads/2025/09/screenshot-2025-09-17-at-9.45.53-pm-1.png assets/img/media/cu-today.png
+https://ggfard.com/wp-content/uploads/2023/04/pnas-podcast-1.png assets/img/media/pnas-podcast.png
+https://ggfard.com/wp-content/uploads/2023/04/pxl_20220930_185952936.jpg assets/img/media/cu-engineering.jpg
+https://ggfard.com/wp-content/uploads/2024/09/screenshot-2024-09-02-at-11.52.46e280afam-1.png assets/img/media/physics-today.png
+https://ggfard.com/wp-content/uploads/2023/04/highschool.webp assets/img/media/mentoring.webp
+https://ggfard.com/wp-content/uploads/2024/09/abc_bees.png assets/img/media/abc-bees.png
+https://ggfard.com/wp-content/uploads/2024/04/cu-open-house-research-expo-2024.pdf assets/files/cu-open-house-research-expo-2024.pdf
+https://ggfard.com/wp-content/uploads/2020/07/ci_2020_paper_final.pdf assets/files/ci_2020_paper_final.pdf
+https://ggfard.com/wp-content/uploads/2020/10/iros-poster-2020.pdf assets/files/iros-poster-2020.pdf
+https://ggfard.com/wp-content/uploads/2020/05/trophallaxis_poster_final_edit-1.pdf assets/files/trophallaxis_poster_final_edit-1.pdf
