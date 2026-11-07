@@ -6,7 +6,7 @@ baseurl: ""
 
 # ---- Look & feel: change these values to restyle the whole site ----
 style:
-  background: "#fbfaf7"   # page background
+  background: "#f9f5f1"   # page background
   text: "#1f2328"         # main text
   muted: "#6a6f76"        # dates, authors, captions
   accent: "#a0522d"       # links and highlights

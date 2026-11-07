@@ -35,6 +35,7 @@ You can edit any file directly on github.com (pencil icon) — the site rebuilds
    - Added a draft bio on the home page (to be edited).
    - Dropped the WordPress comment box and share buttons.
 2. **Design.** Clean single-column layout; colors and fonts are variables in `_config.yml`.
+   Chosen style: background #f9f5f1, text #1f2328, muted #6a6f76, links #a0522d; font Source Serif 4.
 3. **Media.** The old site's images/PDFs are listed in `old-site-media.txt`.
    Run the GitHub Action *Copy media from old site* once (Actions tab → Run workflow) to copy
    them into the repo. Until then, gray placeholders are shown.
@@ -42,7 +43,7 @@ You can edit any file directly on github.com (pencil icon) — the site rebuilds
 4. **Deploy.** Repo `ggfard/ggfard.github.io`, Settings → Pages → Deploy from branch `main` / root.
 
 ## To do
-- [ ] Choose final colors/fonts
+- [x] Choose final colors/fonts (background #f9f5f1, links #a0522d, Source Serif 4)
 - [ ] Edit the bio
 - [ ] Add email and CV (optional)
 - [ ] Run the copy-media action, check images
