@@ -1,33 +1,94 @@
----
-layout: default
----
-<section class="intro">
-  <img src="{{ '/assets/img/profile.jpg' | relative_url }}" alt="Golnar Gharooni-Fard">
-  <div>
-    <h1>Golnar Gharooni-Fard</h1>
-    <!-- DRAFT bio: edit freely -->
-    <p>
-      I am a postdoctoral fellow in the <a href="https://softmath.seas.harvard.edu/">Soft Math Lab</a>
-      at Harvard University and an AAUW Postdoctoral Fellow (2026–2027).
-      I study how collective behavior emerges in animal groups and how animals and people coordinate. My work includes
-      how honeybees build and adapt their comb, how they share food, and how humans and honeyguides communicate
-      while searching for bee nests. I combine experiments and field data with mathematical, physical,
-      and data-driven models.
-    </p>
-    <p>
-      I received my PhD in Computer Science from the University of Colorado Boulder in 2024.
-    </p>
-    <p class="links">
-      {% if site.email != "" %}<a href="mailto:{{ site.email }}">Email</a>{% endif %}
-      {% if site.cv != "" %}<a href="{{ site.cv | relative_url }}">CV</a>{% endif %}
-      {% for s in site.social %}<a href="{{ s.url }}">{{ s.name }}</a>{% endfor %}
-    </p>
-  </div>
-</section>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Golnar Gharooni-Fard</title>
+  <!-- Fonts: to change, pick a font on fonts.google.com, paste its link here, and update --font in style.css -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,wght@0,400;0,700;1,400&display=swap">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
 
-<h2>News</h2>
-<ul class="news">
-  {% for n in site.data.news %}
-  <li><span class="date">{{ n.date }}</span>{{ n.text | markdownify }}</li>
-  {% endfor %}
-</ul>
+  <!-- Header and menu (same on every page) -->
+  <header class="site-header">
+    <a class="site-title" href="index.html">Golnar Gharooni-Fard</a>
+    <nav>
+      <a href="index.html" class="active">Home</a>
+      <a href="research.html">Research</a>
+      <a href="publications.html">Publications</a>
+      <a href="outreach.html">Media &amp; Outreach</a>
+    </nav>
+  </header>
+
+  <main>
+
+    <section class="intro">
+      <img src="assets/img/profile.jpg" alt="Golnar Gharooni-Fard">
+      <div>
+        <h1>Golnar Gharooni-Fard</h1>
+        <!-- BIO: draft text, replace with your own -->
+        <p>
+          I am a postdoctoral fellow in the <a href="https://softmath.seas.harvard.edu/">Soft Math Lab</a>
+          at Harvard University and an AAUW Postdoctoral Fellow (2026–2027).
+          I study how collective behavior emerges in animal groups and how animals and people coordinate.
+        </p>
+        <p>
+          I received my PhD in Computer Science from the University of Colorado Boulder in 2024.
+        </p>
+        <p class="links">
+        <!-- To add email or CV, remove the arrows around one of these lines:
+        <a href="mailto:you@example.com">Email</a>
+        <a href="assets/files/cv.pdf">CV</a>
+        -->
+        <a href="https://scholar.google.com/citations?user=TMMCdbEAAAAJ&amp;hl=en">Google Scholar</a>
+        <a href="https://github.com/ggfard">GitHub</a>
+        <a href="https://www.linkedin.com/in/golnar-gharooni-fard-104a7154/">LinkedIn</a>
+        <a href="https://www.researchgate.net/profile/Golnar_Gharooni_Fard">ResearchGate</a>
+        <a href="https://www.last.fm/user/Golnaaar">Last.fm</a>
+        </p>
+      </div>
+    </section>
+
+    <h2>News</h2>
+    <!-- Newest first. Copy one <li> line to add an item. -->
+    <ul class="news">
+      <li><span class="date">May 2026</span><span>Named an American Association of University Women (AAUW) Postdoctoral Fellow for 2026–2027.</span></li>
+      <li><span class="date">Apr 2026</span><span>Spoke at the Mathematics and Biology Symposium at Harvard's <a href="https://cmsa.fas.harvard.edu/">Center of Mathematical Sciences and Applications</a>.</span></li>
+      <li><span class="date">Oct 2025</span><span>Presented the <a href="https://sites.google.com/college.harvard.edu/measuremather/home">Measuring Mather</a> project at Harvard's Sustainability Social (<a href="https://college.harvard.edu/about/news/sustainability-shines-through-measure-mather">Harvard College news</a>).</span></li>
+      <li><span class="date">Aug 2025</span><span>New paper in PLoS Biology: <a href="https://journals.plos.org/plosbiology/article?id=10.1371/journal.pbio.3003253">Honeybees adapt to a range of comb cell sizes by merging, tilting and layering their construction</a>.</span></li>
+      <li><span class="date">Mar 2025</span><span>Started a postdoc at the <a href="https://softmath.seas.harvard.edu/">Soft Math Lab</a>, Harvard University.</span></li>
+      <li><span class="date">Jan 2025</span><span>Contributed talk at <a href="https://www.ddays.org/2025/">DynamicsDays25</a>, Denver, CO.</span></li>
+      <li><span class="date">Nov 2024</span><span>Defended my PhD thesis.</span></li>
+      <li><span class="date">Aug 2024</span><span>Presented at the <a href="https://iussi.cyberbee.net/iussi-2024/">IUSSI-NAS</a> breakout meeting, Prescott, AZ.</span></li>
+      <li><span class="date">Jun 2024</span><span>Presented at the <a href="https://ci2024.weebly.com/">ACM Collective Intelligence</a> conference, Boston, MA.</span></li>
+      <li><span class="date">May 2024</span><span>Nominated by CU Boulder for the Schmidt Science Postdoctoral Fellowship.</span></li>
+      <li><span class="date">Apr 2024</span><span>Our <a href="https://www.nature.com/articles/s44260-024-00003-1">paper</a> was featured in the first edition of <a href="https://www.nature.com/npjcomplex/">npj Complexity</a>.</span></li>
+      <li><span class="date">Mar 2024</span><span>Won the CU CS <a href="https://www.colorado.edu/cs/news-events/student-awards#ucb-accordion-id--2-content15">annual outstanding research paper award</a>.</span></li>
+      <li><span class="date">Feb 2024</span><span>Presented a <a href="assets/files/cu-open-house-research-expo-2024.pdf">poster</a> at the CU CS annual research expo.</span></li>
+      <li><span class="date">Jan 2024</span><span>Gave a talk to the <a href="https://coloradobeekeepers.org/">Colorado Beekeepers</a> community.</span></li>
+      <li><span class="date">Dec 2023</span><span>Became a PhD candidate.</span></li>
+      <li><span class="date">Nov 2023</span><span>Gave a talk in the CU CS student colloquium series.</span></li>
+      <li><span class="date">Sep 2023</span><span>Won the CU CS departmental publication recognition award for our <a href="https://www.pnas.org/doi/10.1073/pnas.2205043119">PNAS paper</a>.</span></li>
+      <li><span class="date">Aug 2023</span><span><a href="https://dl.acm.org/doi/10.1145/3582269.3615594">Paper</a> accepted at the <a href="https://ci.acm.org/2023/">CI'23</a> conference.</span></li>
+      <li><span class="date">Jul 2023</span><span>Mentored three high school students through the CU <a href="https://www.colorado.edu/sciencediscovery/">Science Discovery</a> program.</span></li>
+      <li><span class="date">Jun 2023</span><span>Attended the <a href="https://www.santafe.edu/engage/learn/programs/sfi-complex-systems-summer-school">SFI Complex Systems Summer School</a> and presented a poster at the <a href="https://santafe.edu/info/collective-intelligence-2023/about">Collective Intelligence symposium</a>, Santa Fe, NM.</span></li>
+      <li><span class="date">May 2023</span><span>Presented at <a href="https://www.siam.org/conferences/cm/conference/ds23">SIAM-DS23</a>, Portland, OR.</span></li>
+      <li><span class="date">Apr 2023</span><span>Invited talk to the <a href="https://www.bouldercountybeekeepers.org/">Boulder County Beekeepers Association</a>.</span></li>
+      <li><span class="date">Mar 2023</span><span>Presented at the <a href="https://meetings.aps.org/Meeting/MAR23/Session/S14.8">APS March Meeting</a>, Las Vegas, NV.</span></li>
+      <li><span class="date">Nov 2022</span><span>New paper in PNAS: <a href="https://www.pnas.org/doi/10.1073/pnas.2205043119">Crystallography of honeycomb formation under geometric frustration</a>.</span></li>
+    </ul>
+
+  </main>
+
+  <!-- Footer (same on every page) -->
+  <footer class="site-footer">
+    <a href="https://scholar.google.com/citations?user=TMMCdbEAAAAJ&amp;hl=en">Google Scholar</a> ·
+    <a href="https://github.com/ggfard">GitHub</a> ·
+    <a href="https://www.linkedin.com/in/golnar-gharooni-fard-104a7154/">LinkedIn</a> ·
+    <a href="https://www.researchgate.net/profile/Golnar_Gharooni_Fard">ResearchGate</a> ·
+    <a href="https://www.last.fm/user/Golnaaar">Last.fm</a>
+  </footer>
+
+</body>
+</html>

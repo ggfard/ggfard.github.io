@@ -1,0 +1,85 @@
+/* =========================================================
+   STYLE SETTINGS: change these to restyle the whole site
+   ========================================================= */
+:root {
+  --background: #f9f5f1;   /* page background */
+  --text: #1f2328;         /* main text */
+  --muted: #6a6f76;        /* dates, captions, menu */
+  --accent: #a0522d;       /* links, active menu item */
+  --line: #e2ddd7;         /* thin lines under headings */
+
+  --font: "Source Serif 4", Georgia, serif;          /* body text */
+  --heading-font: "Source Serif 4", Georgia, serif;  /* titles */
+
+  --text-size: 18px;       /* base text size */
+  --page-width: 820px;     /* max width of the content column */
+  --photo-width: 220px;    /* home page photo */
+}
+
+/* ---------- Page ---------- */
+body {
+  margin: 0;
+  background: var(--background);
+  color: var(--text);
+  font-family: var(--font);
+  font-size: var(--text-size);
+  line-height: 1.6;
+}
+main { max-width: var(--page-width); margin: 0 auto; padding: 1rem 1.5rem 3rem; }
+h1, h2, h3 { font-family: var(--heading-font); line-height: 1.25; }
+h1 { font-size: 2rem; margin: 1.5rem 0 1rem; }
+h2 { font-size: 1.4rem; margin-top: 2.5rem; padding-bottom: .3rem; border-bottom: 1px solid var(--line); }
+a { color: var(--accent); text-decoration: none; }
+a:hover { text-decoration: underline; }
+img { max-width: 100%; }
+.meta { color: var(--muted); font-size: .92rem; }
+
+/* ---------- Header (name + menu) ---------- */
+.site-header {
+  max-width: var(--page-width); margin: 0 auto; padding: 1.5rem 1.5rem .5rem;
+  display: flex; flex-wrap: wrap; justify-content: space-between; align-items: baseline; gap: .5rem 1.5rem;
+}
+.site-title { font-family: var(--heading-font); font-size: 1.35rem; font-weight: 700; color: var(--text); }
+.site-header nav a { color: var(--muted); font-size: .95rem; margin-right: 1.2rem; white-space: nowrap; }
+.site-header nav a:last-child { margin-right: 0; }
+.site-header nav a.active { color: var(--accent); }
+
+/* ---------- Footer ---------- */
+.site-footer { text-align: center; color: var(--muted); font-size: .85rem; padding: 2rem 1rem; }
+
+/* ---------- Home: photo + bio ---------- */
+.intro { display: flex; gap: 2rem; align-items: flex-start; margin-top: 1.5rem; }
+.intro img { width: var(--photo-width); border-radius: 6px; flex-shrink: 0; }
+.intro h1 { margin-top: 0; }
+.links a { margin-right: 1rem; white-space: nowrap; }
+
+/* ---------- Home: news list ---------- */
+.news { list-style: none; padding: 0; }
+.news li { display: flex; gap: 1rem; margin-bottom: .55rem; }
+.news .date { color: var(--muted); font-size: .92rem; min-width: 5.5rem; flex-shrink: 0; padding-top: .1rem; }
+
+/* ---------- Publications ---------- */
+.pub { margin-bottom: 1.3rem; }
+.tag { font-size: .8rem; color: var(--muted); border: 1px solid currentColor; border-radius: 3px; padding: 0 .3rem; margin-left: .3rem; }
+
+/* ---------- Research ---------- */
+.project { margin-bottom: 3rem; }
+.question { font-style: italic; }
+.gallery { display: grid; grid-template-columns: repeat(auto-fill, minmax(180px, 1fr)); gap: .6rem; margin: 1rem 0; }
+.gallery img { width: 100%; height: 160px; object-fit: cover; border-radius: 4px; }
+
+/* ---------- Media & Outreach ---------- */
+.media { display: flex; gap: 1.2rem; margin-bottom: 1.8rem; align-items: flex-start; }
+.media > a { flex-shrink: 0; }
+.media img { width: 200px; height: 125px; object-fit: cover; border-radius: 4px; }
+.media-title { font-weight: 700; }
+
+/* ---------- Phones ---------- */
+@media (max-width: 640px) {
+  body { font-size: 17px; }
+  .intro, .media { flex-direction: column; align-items: stretch; }
+  .intro > div { min-width: 0; }
+  .intro img { width: 160px; }
+  .media img { width: 100%; height: auto; }
+  .site-header nav a { margin-right: .8rem; }
+}

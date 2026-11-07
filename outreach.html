@@ -1,23 +1,93 @@
----
-layout: default
-title: Media & Outreach
-permalink: /outreach/
----
-<h1>Media Coverage &amp; Outreach</h1>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Media & Outreach · Golnar Gharooni-Fard</title>
+  <!-- Fonts: to change, pick a font on fonts.google.com, paste its link here, and update --font in style.css -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,wght@0,400;0,700;1,400&display=swap">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
 
-{% for m in site.data.media.coverage %}
-<div class="media">
-  <a href="{{ m.url }}"><img src="{{ '/assets/img/media/' | append: m.image | relative_url }}" alt="{{ m.outlet }}"></a>
-  <div>
-    <div class="item"><a class="title" href="{{ m.url }}">{{ m.outlet }}</a>
-      {% if m.date %}<div class="meta">{{ m.date }}</div>{% endif %}
-      {% if m.note %}<div>{{ m.note }}</div>{% endif %}
+  <!-- Header and menu (same on every page) -->
+  <header class="site-header">
+    <a class="site-title" href="index.html">Golnar Gharooni-Fard</a>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="research.html">Research</a>
+      <a href="publications.html">Publications</a>
+      <a href="outreach.html" class="active">Media &amp; Outreach</a>
+    </nav>
+  </header>
+
+  <main>
+
+    <h1>Media Coverage &amp; Outreach</h1>
+    <!-- Copy one <div class="media"> block to add an item. -->
+    <div class="media">
+      <a href="https://www.nytimes.com/2025/08/26/science/honey-comb-bees-math-engineering.html"><img src="assets/img/media/nyt.png" alt=""></a>
+      <div>
+        <a class="media-title" href="https://www.nytimes.com/2025/08/26/science/honey-comb-bees-math-engineering.html">The New York Times — Science</a><br>
+        <span class="meta">Aug 2025</span><br>
+      </div>
     </div>
-  </div>
-</div>
-{% endfor %}
+    <div class="media">
+      <a href="https://www.colorado.edu/today/2025/09/11/construction-secrets-honeybees-study-reveals-how-bees-build-hives-tricky-spots"><img src="assets/img/media/cu-today.png" alt=""></a>
+      <div>
+        <a class="media-title" href="https://www.colorado.edu/today/2025/09/11/construction-secrets-honeybees-study-reveals-how-bees-build-hives-tricky-spots">CU Boulder Today</a><br>
+        <span class="meta">Sep 2025</span><br>
+        How honeybees build their hives in tricky spots.
+      </div>
+    </div>
+    <div class="media">
+      <a href="https://www.pnas.org/post/podcast/honeybees-natures-puzzle-solvers"><img src="assets/img/media/pnas-podcast.png" alt=""></a>
+      <div>
+        <a class="media-title" href="https://www.pnas.org/post/podcast/honeybees-natures-puzzle-solvers">PNAS Science Sessions podcast</a><br>
+        A short conversation with Orit Peleg, Francisco López Jiménez, and me about how honeybees overcome geometric constraints when building their homes.
+      </div>
+    </div>
+    <div class="media">
+      <a href="https://www.colorado.edu/engineering/2023/04/12/computer-science-phd-student-leads-research-secrets-honeycomb-formation"><img src="assets/img/media/cu-engineering.jpg" alt=""></a>
+      <div>
+        <a class="media-title" href="https://www.colorado.edu/engineering/2023/04/12/computer-science-phd-student-leads-research-secrets-honeycomb-formation">CU Boulder College of Engineering and Applied Science</a><br>
+        <span class="meta">Apr 2023</span><br>
+        Applications of the work in bio-inspired distributed computation.
+      </div>
+    </div>
+    <div class="media">
+      <a href="https://physicstoday.scitation.org/do/10.1063/PT.6.1.20221201a/full/"><img src="assets/img/media/physics-today.png" alt=""></a>
+      <div>
+        <a class="media-title" href="https://physicstoday.scitation.org/do/10.1063/PT.6.1.20221201a/full/">Physics Today</a><br>
+        <span class="meta">Dec 2022</span><br>
+      </div>
+    </div>
+    <div class="media">
+      <a href="https://www.colorado.edu/cs/2021/07/08/it-takes-hive-community-volunteers-honeybee-research"><img src="assets/img/media/mentoring.webp" alt=""></a>
+      <div>
+        <a class="media-title" href="https://www.colorado.edu/cs/2021/07/08/it-takes-hive-community-volunteers-honeybee-research">CU Boulder Computer Science — My mentoring experience</a><br>
+        <span class="meta">Jul 2021</span><br>
+        Mentoring two high school students, Charlotte Gorgemans and April Tong, for over a year during and after Covid.
+      </div>
+    </div>
 
-<h2>Public &amp; Community Talks</h2>
-<ul>
-  {% for t in site.data.media.talks %}<li><a href="{{ t.url }}">{{ t.name }}</a></li>{% endfor %}
-</ul>
+    <h2>Public &amp; Community Talks</h2>
+    <ul>
+      <li><a href="https://coloradobeekeepers.org/">Colorado State Beekeepers Association (CSBA)</a></li>
+      <li><a href="https://www.bouldercountybeekeepers.org/">Boulder County Beekeepers Association (BCBA)</a></li>
+      <li><a href="https://abcbees.ca/">Master Academy Webinar Series, ABC Bees (Alberta, Canada)</a></li>
+    </ul>
+
+  </main>
+
+  <!-- Footer (same on every page) -->
+  <footer class="site-footer">
+    <a href="https://scholar.google.com/citations?user=TMMCdbEAAAAJ&amp;hl=en">Google Scholar</a> ·
+    <a href="https://github.com/ggfard">GitHub</a> ·
+    <a href="https://www.linkedin.com/in/golnar-gharooni-fard-104a7154/">LinkedIn</a> ·
+    <a href="https://www.researchgate.net/profile/Golnar_Gharooni_Fard">ResearchGate</a> ·
+    <a href="https://www.last.fm/user/Golnaaar">Last.fm</a>
+  </footer>
+
+</body>
+</html>

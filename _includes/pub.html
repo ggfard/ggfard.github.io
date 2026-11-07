@@ -1,8 +1,0 @@
-<!-- One publication entry; used by publications.html -->
-<div class="item">
-  <div class="title">{{ include.p.title }}{% if include.p.tag %}<span class="tag">{{ include.p.tag }}</span>{% endif %}</div>
-  <div>{{ include.p.authors }}</div>
-  <div class="meta"><em>{{ include.p.venue }}</em> ({{ include.p.year }})
-    {% for l in include.p.links %} · <a href="{{ l.url | relative_url }}">{{ l.label }}</a>{% endfor %}
-  </div>
-</div>
