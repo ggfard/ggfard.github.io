@@ -8,8 +8,8 @@
   --accent: #a0522d;       /* links, active menu item */
   --line: #e2ddd7;         /* thin lines under headings */
 
-  --font: "Source Serif 4", Georgia, serif;          /* body text */
-  --heading-font: "Source Serif 4", Georgia, serif;  /* titles */
+  --font: Helvetica, Arial, sans-serif;
+  --heading-font: Helvetica, Arial, sans-serif;
 
   --text-size: 18px;       /* base text size */
   --page-width: 820px;     /* max width of the content column */
